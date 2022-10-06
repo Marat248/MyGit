@@ -10,13 +10,14 @@
 <body>
 <?php
 
-   echo 'Hello World!';
-   echo '<br>Hello';
+    $str = 'Hello';
+    echo 'Var: ' . $str;
+    echo "<input type='text'><br>";
 
-
-   echo "\"";
-
-//  Comment
+    $lenght = strlen($str);
+    echo strtoupper($str);
+    echo $lenght;
+    echo md5("1937");
 ?>
 </body>
 </html>
