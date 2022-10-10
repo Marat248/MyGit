@@ -9,15 +9,23 @@
 </head>
 <body>
 <?php
+    $nums = [4, 5, 2, 7, 0, 6];
+    $nums[3] = 9;
+    echo $nums[3].'<br>';
 
-    $str = 'Hello';
-    echo 'Var: ' . $str;
-    echo "<input type='text'><br>";
+    $arr = [4, 7, true, 0.6, 'r', 12];
+    $arr[0] = 'falce';
+    echo $arr[0].'<br>';
 
-    $lenght = strlen($str);
-    echo strtoupper($str);
-    echo $lenght;
-    echo md5("1937");
+    $list = ["age" => 44, "name" => "Marat", "hobby" => "Box"];
+    echo $list["hobby"].'<br>';
+
+    $matrix = [
+            [4, 6, 8],
+            [1, 3, 5, 7, 9],
+            [0, "yes", "no"]
+        ];
+    echo $matrix[2][1];
 ?>
 </body>
 </html>
