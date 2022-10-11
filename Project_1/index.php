@@ -9,23 +9,13 @@
 </head>
 <body>
 <?php
-    $nums = [4, 5, 2, 7, 0, 6];
-    $nums[3] = 9;
-    echo $nums[3].'<br>';
-
-    $arr = [4, 7, true, 0.6, 'r', 12];
-    $arr[0] = 'falce';
-    echo $arr[0].'<br>';
-
-    $list = ["age" => 44, "name" => "Marat", "hobby" => "Box"];
-    echo $list["hobby"].'<br>';
-
-    $matrix = [
-            [4, 6, 8],
-            [1, 3, 5, 7, 9],
-            [0, "yes", "no"]
-        ];
-    echo $matrix[2][1];
+    $list = ["age" => 44, "name" => "Marat", "hobby" => "box"];
+    $arr = [2,4,6,8];
+//    foreach ($list as $item => $value) {
+//        echo "Key: $item. Value: $value.<br>";
+//    }
+    foreach ($arr as $i => $value)
+        echo "Index: $i. Value: $value.<br>";
 ?>
 </body>
 </html>
