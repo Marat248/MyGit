@@ -9,13 +9,25 @@
 </head>
 <body>
 <?php
-    $list = ["age" => 44, "name" => "Marat", "hobby" => "box"];
-    $arr = [2,4,6,8];
-//    foreach ($list as $item => $value) {
-//        echo "Key: $item. Value: $value.<br>";
+//    function info() {
+//        global $x;
+//        $x = 0;
 //    }
-    foreach ($arr as $i => $value)
-        echo "Index: $i. Value: $value.<br>";
+
+    function click() {
+        static $count;
+        $count++;
+        echo $count . "<br>";
+    }
+
+    click();
+    click();
+    click();
+
+//    $x = 10;
+//    info();
+//    echo $x;
+
 ?>
 </body>
 </html>
